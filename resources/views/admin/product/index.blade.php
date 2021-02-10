@@ -14,7 +14,7 @@
 						@foreach($product->images as $image)
 							<img src="{{$image->image_path}}" style="max-width: 100px">
 						@endforeach
-						<a href="{{route('product.edit',$product->id)}}" class="btn btn-primary btn-sm " style="padding-left:200px">Edit Product</a>
+						
 						<br>
 
 						<form action="{{route('product.destroy',$product->id)}}"  method="POST">
